@@ -41,16 +41,26 @@ public class Hito1 {
         JRadioButton rd1 = new JRadioButton("OPT1");
         JRadioButton rd2 = new JRadioButton("OPT2");
         JRadioButton rd3 = new JRadioButton("OPT3");
-        for (int i=1;i<=3;i++){
 
-        }
 
-        JPanel radioPanel = new JPanel();
-        radioPanel.add(rd1);
-        radioPanel.add(rd2);
-        radioPanel.add(rd3);
+        ButtonGroup grupoBoton = new ButtonGroup();
+        grupoBoton.add(rd1);
+        grupoBoton.add(rd2);
+        grupoBoton.add(rd3);
 
-        String [] lista ={"OPT1","OPT2","OPT3"};
+        rd1.setSelected(true);
+
+        panelEste.add(rd1);
+        panelEste.add(rd2);
+        panelEste.add(rd3);
+
+        rd1.setBackground(null);
+        rd2.setBackground(null);
+        rd3.setBackground(null);
+
+        rd1.setBounds(10,80,75,50);
+        rd2.setBounds(10,115,75,50);
+        rd3.setBounds(10,150,75,50);
 
         //Button panel
         JButton bt1 = new JButton("But 1");
@@ -71,7 +81,7 @@ public class Hito1 {
 
 
         panelNorte.add(boxPanel);
-        panelEste.add(radioPanel);
+        panelEste.add(panelCentro);
         panelSur.add(botonPanel, BorderLayout.LINE_START);
         panelSur.add(Box.createVerticalStrut(50));
 
