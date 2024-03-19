@@ -73,6 +73,7 @@ public class Principal {
 
         frame.pack();
         frame.setVisible(true);
+        System.out.println("a");
     }
     public static void main(String[] args){
         Principal ver = new Principal();
